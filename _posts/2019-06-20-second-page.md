@@ -1,6 +1,6 @@
 ---
-title: Second post
-author: John Doe
+title: Second post attempt
+author: Fernando Valadares
 layout: post
 ---
 

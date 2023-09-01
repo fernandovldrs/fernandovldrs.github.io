@@ -10,7 +10,7 @@ author_email:       fernando.valadares@u.nus.edu # Your email here
 author_gravatar:    1dd76ee889247b062cc8969548015f9b # Your Gravatar md5 hash here for logo
 
 # Site Settings
-url:                 https://ryanmcdermott.me/jekyll-latex # Change to your site
+url:                 https://fernandovldrs.github.io # Change to your site
 baseurl:
 permalink:          /posts/:title # Post permalink
 timezone:           Asia/Singapore # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones

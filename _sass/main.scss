@@ -133,6 +133,20 @@
   --proof-symbol-filter: invert(80%);
 }
 
+.latex-light {
+  --body-color: hsl(360, 100%, 100%);
+  --body-bg-color: hsl(0, 0%, 16%);
+  --link-visited: hsl(196 80% 77%);
+  --link-focus-outline: hsl(215, 63%, 73%);
+  --pre-bg-color: hsl(0, 1%, 25%);
+  --kbd-bg-color: hsl(0, 0%, 16%);
+  --kbd-border-color: hsl(210, 5%, 70%);
+  --table-border-color: white;
+  --sidenote-target-border-color: hsl(0, 0%, 59%);
+  --footnotes-border-color: hsl(0, 0%, 59%);
+  --proof-symbol-filter: invert(80%);
+}
+
 @media (prefers-color-scheme: dark) {
   .latex-dark-auto {
     --body-color: hsl(0, 0%, 86%);

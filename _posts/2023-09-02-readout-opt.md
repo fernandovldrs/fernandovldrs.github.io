@@ -63,4 +63,4 @@ $$I' = 2^{-12}\sum_{n=0}^Na[n]\left(\cos{\delta}\cos(\omega_{IF}t_sn) + \sin\del
 
 $$Q' = 2^{-12}\sum_{n=0}^Na[n]\left(\sin{\delta}\cos(\omega_{IF}t_sn) - \cos\delta\sin(\omega_{IF}t_sn) \right)$$
 
-So the rotated quadratures have the same general structure as the original quadratures, except for a different choice of integration weights. The rotation angle is determined by the $\arctan(w_s/w_c)$, or, equivalently, by the argument of the complex number $w_c + iw_s$.
+So the rotated quadratures have the same general structure as the original quadratures, except for a different choice of integration weights. The rotation angle is determined by the $\arctan(w_s/w_c)$, or, equivalently, by the argument of the complex number $w_c + iw_s$. We will employ this knowledge when creating optimal integration weights.

@@ -16,3 +16,6 @@ The objective of this post is to go through the math and the code for finding th
 # Table of Contents
 * TOC
 {:toc}
+
+
+{% include image.liquid url="/assets/readout-opt_acd_signal_noisy.png" description="Example of probe signal to be analyzed." %}

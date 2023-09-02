@@ -106,4 +106,6 @@ where $h[n]$ is the impulse response of a Hann filter, which acts as a low-pass 
 
 $$env(s) = \frac{1}{2}(s_{filtered}[n])^*.$$
 
-Attention: It is important to make sure that the acquired signal $s[n]$ does not have a DC offset. It can be simply removed digitally by subtracting the signal average. Otherwise, the envelope will present ripples oscillating at $\omega_{IF}$ frequency corresponding to the upconverted DC offset.  
+**Important**: We need to make sure the acquired signal $s[n]$ does not have a DC offset. It can be simply removed digitally by subtracting the signal average. Otherwise, the envelope will present ripples oscillating at frequency $\omega_{IF}$ corresponding to the upconverted DC offset.  
+
+

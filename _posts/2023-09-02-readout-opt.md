@@ -34,9 +34,13 @@ $$\rightarrow X[\omega_{IF}] = \braket {K|s} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} 
 The projection $X[\omega_{IF}]$ is equivalent to the Fourier transform of the signal at frequency $\omega_{IF}$. We are thus ignoring all other frequency components. Since $X[\omega_{IF}]$ is a complex number, it can be written as a sum of a real part $I$ to an imaginary part $Q$. These are the quadratures of $s[n]$.
 
 The quadratures are obtained as a sum, or integration, of the signal multiplied by a demodulation factor:
+
 $$I = 2^{-12}\sum_{n=0}^Na[n]\cos(\omega_{IF}t_sn)$$
+
 $$Q = -2^{-12}\sum_{n=0}^Na[n]\sin(\omega_{IF}t_sn)$$
+
 We can generalize the quadrature integration formula as a function of weight functions $w_s[n]$ and $w_c[n]$:
+
 $$d = 2^{-12}\sum^N_{n=0}a[n]\left(w_c\left[n\right]\cos(\omega_{IF}t_s n + \phi) +w_s\left[n \right]\sin(\omega_{IF}t_s n + \phi)\right)$$
 
 

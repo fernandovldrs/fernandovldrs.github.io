@@ -34,6 +34,6 @@ Now let's see how to calculate the pulse quadratures. Besides the signal, the AD
 
 $$K[n] = e^{i\omega_{IF} t_s n}$$
 
-$$\rightarrow X[k] = \braket {K|2^{-12}a}$$
+$$\rightarrow X[\omega_{IF}] = \braket {K[n]|s[n]} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ = Ae^{i\theta}.$$
 
 

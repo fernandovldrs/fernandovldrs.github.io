@@ -72,3 +72,8 @@ As mentioned beforehand, the objectives of optimizing integration weights are tw
 - Rotate the signal in phase space so the information is encoded on a single quadrature.
 
 How to know which sections of the signal carry more or less information about the qubit? It is not too complicated. The signal goes through a trajectory in phase space as a function of time, and the path changes whether the qubit is in $\ket{0}$ or $\ket{1}$. 
+
+To get the trajectory of the signal, we first calculate its complex envelope. The envelope (figure on the left) is a sequence of complex numbers that describe the path in phase space (figure on the right).    
+{% include image.liquid url="/assets/readout-opt_acd_signal_noisy.png" description="Figure 1: Example of probe signal to be analyzed." %}
+
+The envelope is essentially the downconversion of the signal by the frequency $\omega_{IF}$. In the next section, we go through the calculation step-by-step.

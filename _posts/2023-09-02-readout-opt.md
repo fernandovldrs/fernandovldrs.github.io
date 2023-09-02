@@ -129,3 +129,6 @@ $$w_s = -Im(w_{opt}) = -W[n]\sin\theta[n]$$
 which gives the optimal quadrature $I_{opt}$ to be used in qubit readout. 
 
 To show how the results look like in practice, I got a graph from a recent experiment I did. The blue histogram shows the frequency of values of $I_{opt}$ when the qubit is prepared in the ground state $\ket{0}$. Notice it has essentially a Gaussian shape with mean $I_{g}$. The orange histogram shows the same experiment, but when the qubit is prepared in the excited state $\ket{1}$. If we ignore the decay $\ket{1} \rightarrow \ket{0}$ that occurs during the measurement, it also has a Gaussian shape around a value $I_{e}$. Knowing these values is essential for single-shot readout: in a single measurement of $I_{opt}$, we can assign the state of the qubit according to whether it is closer to $I_{g}$ or $I_{e}$. The state discrimination problem is uni-dimensional, so it is convenient to project it to a single quadrature.
+
+{% include image.liquid url="/assets/readout-opt_gaussians.png" %}
+

@@ -6,11 +6,7 @@ layout: post
 
 # Introduction
 
-The state of a superconducting qubit can be measured using a probe microwave signal. By analyzing the probe after it has interacted with the system, we extract its phase and amplitude values (or, equivalently, the signal quadratures) and assign the qubit state either to $\left|0\right>$ or $\left|1\right>$. $\ket{0}$, $\ket{1}$
-
-# Introduction
-
-The state of a superconducting qubit can be measured using a probe microwave signal. By analyzing the probe after it has interacted with the system, we extract its phase and amplitude values (or, equivalently, the signal quadratures) and assign the qubit state either to $\left|0\right>$ or $\left|1\right>$. $\ket{0}$, $\ket{1}$
+The state of a superconducting qubit can be measured using a probe microwave signal. By analyzing the probe after it has interacted with the system, we extract its phase and amplitude values (or, equivalently, the signal quadratures) and assign the qubit state either to 0 or 1.
 
 But how to extract the quadrature values of a pulse, and how to do so in an optimal, noise-resistant way? 
 

@@ -92,7 +92,15 @@ Now we have two frequency components, DC and $2\omega$. The cool thing is that n
 
 $$\left(a(t)e^{i\omega t}\right)_{DC} = \frac{A}{2}e^{-i\phi},$$
 
-And the parameters $A$ and $\phi$ are obtained through simple calculation.
+And the parameters $A$ and $\phi$ are obtained through simple calculation. Note the resulting signal has half the amplitude and the phase is flipped.
 
+Back to the readout signal example, we will take the product
 
+$$s_{rot}[n]= s[n]e^{i\omega_{IF}t_sn} $$
+
+And then apply a Hann filter by calculating the convolution
+
+$$s_{filtered}[n]= (s*h)[n] = \sum_{n'=0}^Ns[n']h[n-n'],$$
+
+where $h[n]$ is the impulse response of a Hann filter, which acts as a low-pass filter to eliminate $2\omega_{IF}$ components on the signal. Since the phase is flipped and the amplitude is halved, we can get the envelope as
 

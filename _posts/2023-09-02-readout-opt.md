@@ -117,3 +117,5 @@ $$w_{opt} = \textrm{env}(s_g)[n] - \textrm{env}(s_e)[n] = W[n]e^{i\theta[n]}.$$
 If the envelopes are equal at an instant $n_{eq}$, there is no information about the qubit state and $w_{opt}[n_{eq}] = 0$.
 
 Additionally, the phase of $w_{opt}[n]$ will rotate the excited- and ground-state $(I,Q)$ pairs so they are aligned with the real axis of the complex plane, and therefore we only need to care about the quadrature $I$ during readout. See the picture below, which shows the two trajectories in phase space. The red arrow is a demonstration of $w_{opt}[n]$ at a given point in time. It has a phase of $arg(w_{opt}[n]) = -\theta[n]$, which we eliminate by rotating the plane by $\theta = arg(w_{opt}[n])$ during the demodulation.
+
+{% include image.liquid url="/assets/readout-opt_woptimal.png" %}

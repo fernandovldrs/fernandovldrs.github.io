@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Fernando Valadares
 ---
 
 I'm an engineer and physicist working in quantum technologies. Born in Recife, Brazil, and currently based in Singapore. I am interested in superconducting circuits research, epistemology, educational content writing and science outreach. 

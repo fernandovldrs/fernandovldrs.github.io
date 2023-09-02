@@ -104,4 +104,6 @@ $$s_{filtered}[n]= (s_{rot}*h)[n] = \sum_{n'=0}^Ns_{rot}[n']h[n-n'],$$
 
 where $h[n]$ is the impulse response of a Hann filter, which acts as a low-pass filter to eliminate $2\omega_{IF}$ components on the signal. Since the phase is flipped and the amplitude is halved, we can get the envelope as
 
-$$env(a) = \frac{1}{2}(s_{filtered}[n])^*.$$
+$$env(s) = \frac{1}{2}(s_{filtered}[n])^*.$$
+
+Attention: It is important to make sure that the acquired signal $s[n]$ does not have a DC offset. It can be simply removed digitally by subtracting the signal average. Otherwise, the envelope will present ripples oscillating at $\omega_{IF}$ frequency corresponding to the upconverted DC offset.  

@@ -79,3 +79,11 @@ To get the trajectory of the signal, we first calculate its complex envelope. Th
 In the next section, we go through the calculation step-by-step.
 
 ## Obtaining the signal envelopes
+
+Consider first the simple time-continuous case where $a(t) = A\cos(\omega t+ \phi)$. We know $\omega$ and we want to obtain $A$ and $\phi$. This can be done by multiplying the trace by an exponential factor
+
+$$\begin{align*}
+a(t)e^{j\omega t} 
+&= A\cos(\omega t)\cos(\omega t + \phi) + iA\sin(\omega t)\cos(\omega t + \phi) \\
+&= \frac{A}{2}(\cos(\phi) + \cos(2\omega t +2\phi)) + i\frac{A}{2}(-\sin(\phi) + \sin(2\omega t +2\phi))
+\end{align*}$$

@@ -11,6 +11,6 @@ I graduated in electronics engineering in 2019 from the Aeronautics Institute of
 
 ## Links
 [Meet a CQTian: Fernando Valadares](https://www.quantumlah.org/about/highlight/2022-04-meet-fernando)
-[Google Scholar
-](https://scholar.google.com/citations?user=7fsW9gsAAAAJ&hl=pt-BR)https://scholar.google.com/citations?user=7fsW9gsAAAAJ&hl=pt-BR
+[Google Scholar](https://scholar.google.com/citations?user=7fsW9gsAAAAJ&hl=pt-BR)
+
 {% include image.liquid url="/assets/about_rinjani.jpeg"%}

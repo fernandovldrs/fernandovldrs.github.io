@@ -80,10 +80,19 @@ In the next section, we go through the calculation step-by-step.
 
 ## Obtaining the signal envelopes
 
-Consider first the simple time-continuous case where $a(t) = A\cos(\omega t+ \phi)$. We know $\omega$ and we want to obtain $A$ and $\phi$. This can be done by multiplying the trace by an exponential factor
+Consider first the simple time-continuous case where $a(t) = A\cos(\omega t+ \phi)$. We know $\omega$ and we want to obtain $A$ and $\phi$. This can be done by multiplying the trace by an exponential factor $e^{j\omega t}$:
 
 $$\begin{align*}
 a(t)e^{j\omega t} 
 &= A\cos(\omega t)\cos(\omega t + \phi) + iA\sin(\omega t)\cos(\omega t + \phi) \\
 &= \frac{A}{2}(\cos(\phi) + \cos(2\omega t +2\phi)) + i\frac{A}{2}(-\sin(\phi) + \sin(2\omega t +2\phi))
 \end{align*}$$
+
+Now we have two frequency components, DC and $2\omega$. The cool thing is that now one of these components does not oscillate in time and carries both $A$ and $\phi.$ The uncool thing is that the $2\omega$ component must be filtered. After filtering, the signal is
+
+$$\left(a(t)e^{i\omega t}\right)_{DC} = \frac{A}{2}e^{-i\phi},$$
+
+And the parameters $A$ and $\phi$ are obtained through simple calculation.
+
+
+

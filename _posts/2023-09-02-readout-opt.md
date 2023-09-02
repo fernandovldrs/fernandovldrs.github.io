@@ -43,6 +43,18 @@ We can generalize the quadrature integration formula as a function of weight fun
 
 $$d = 2^{-12}\sum^N_{n=0}a[n]\left(w_c\left[n\right]\cos(\omega_{IF}t_s n + \phi) +w_s\left[n \right]\sin(\omega_{IF}t_s n + \phi)\right)$$
 
+For $I$ integration, $w_c[n] = 1$ and $w_c[n]=0$, while the oppposite is true for $Q$.
 
+A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqrt{I^2 + Q^2}$. Exciting the qubit will change the quadratures of the acquired signal and will show up as a feature in the experiment. But we want to go further. By optimizing the integration weights, we can reduce the impact of noise in the integration. We can also project the information in one of the quadratures, say $I$, to be used for optimal readout. Then let's see what else integration weights can offer.
 
-A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqrt{I^2 + Q^2}$. Exciting the qubit will change the quadratures of the acquired signal.
+# Rotating the signal in phase space
+
+As previously mentioned, $X[\omega_{IF}]$ is a complex number. A rotation in phase space is as simple as a multiplication by a phase factor:
+
+$$X[\omega_{IF}] = I+iQ = (I'+iQ')e^{-i\delta} = X'[\omega_{IF}]e^{-i\delta}$$
+
+The quadratures are transformed as
+
+$$I' = Re\{(I+iQ)e^{i\delta}\} = I\cos\delta - Q\sin\delta$$
+
+$$Q' = Im\{(I+iQ)e^{i\delta}\} = I\sin\delta + Q\cos\delta$$

@@ -100,7 +100,7 @@ $$s_{rot}[n]= s[n]e^{i\omega_{IF}t_sn} $$
 
 And then apply a Hann filter by calculating the convolution
 
-$$s_{filtered}[n]= (s*h)[n] = \sum_{n'=0}^Ns[n']h[n-n'],$$
+$$s_{filtered}[n]= (s_{rot}*h)[n] = \sum_{n'=0}^Ns_{rot}[n']h[n-n'],$$
 
 where $h[n]$ is the impulse response of a Hann filter, which acts as a low-pass filter to eliminate $2\omega_{IF}$ components on the signal. Since the phase is flipped and the amplitude is halved, we can get the envelope as
 

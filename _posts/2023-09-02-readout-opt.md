@@ -47,7 +47,7 @@ For $I$ integration, $w_c[n] = 1$ and $w_c[n]=0$, while the oppposite is true fo
 
 A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqrt{I^2 + Q^2}$. Exciting the qubit will change the quadratures of the acquired signal and will show up as a feature in the experiment. But we want to go further. By optimizing the integration weights, we can reduce the impact of noise in the integration. We can also project the information into a single quadrature, say $I$, to be used for optimal readout. So let's see what else integration weights can offer.
 
-# Rotating the signal in phase space
+## Rotating the signal in phase space
 
 As previously mentioned, $X[\omega_{IF}]$ is a complex number. A rotation in phase space is as simple as a multiplication by a phase factor:
 
@@ -63,4 +63,12 @@ $$I' = 2^{-12}\sum_{n=0}^Na[n]\left(\cos{\delta}\cos(\omega_{IF}t_sn) + \sin\del
 
 $$Q' = 2^{-12}\sum_{n=0}^Na[n]\left(\sin{\delta}\cos(\omega_{IF}t_sn) - \cos\delta\sin(\omega_{IF}t_sn) \right)$$
 
-So the rotated quadratures have the same general structure as the original quadratures, except for a different choice of integration weights. The rotation angle is determined by the $\arctan(w_s/w_c)$, or, equivalently, by the argument of the complex number $w_c + iw_s$. We will employ this knowledge when creating optimal integration weights.
+So the rotated quadratures have the same general structure as the original quadratures, except for a different choice of integration weights. The rotation angle is determined by the $\arctan(w_s/w_c)$, or, equivalently, by the argument of the complex number $w_c + iw_s$. We will employ this knowledge in the next section.
+
+# Calculating optimal integration weights
+
+As mentioned beforehand, the objectives of optimizing integration weights are two:
+- Increase the weights when the information carried by the signal is high compared to the noise; decrease weights otherwise,
+- Rotate the signal in phase space so the information is encoded on a single quadrature.
+
+How to know which sections of the signal carry more or less information about the qubit? It is not too complicated: compare the difference in quadratures when the qubit is in $\ket{0}$ or $\ket{1}$.

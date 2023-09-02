@@ -71,4 +71,4 @@ As mentioned beforehand, the objectives of optimizing integration weights are tw
 - Increase the weights when the information carried by the signal is high compared to the noise; decrease weights otherwise,
 - Rotate the signal in phase space so the information is encoded on a single quadrature.
 
-How to know which sections of the signal carry more or less information about the qubit? It is not too complicated: compare the difference in quadratures when the qubit is in $\ket{0}$ or $\ket{1}$.
+How to know which sections of the signal carry more or less information about the qubit? It is not too complicated. The signal goes through a trajectory in phase space as a function of time, and the path changes whether the qubit is in $\ket{0}$ or $\ket{1}$. 

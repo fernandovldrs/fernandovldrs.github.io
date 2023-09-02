@@ -55,6 +55,8 @@ $$X[\omega_{IF}] = I+iQ = (I'+iQ')e^{-i\delta} = X'[\omega_{IF}]e^{-i\delta}$$
 
 The quadratures are transformed as
 
-$$I' = Re\{(I+iQ)e^{i\delta}\} = I\cos\delta - Q\sin\delta$$
+$$I' = I\cos\delta - Q\sin\delta$$
 
-$$Q' = Im\{(I+iQ)e^{i\delta}\} = I\sin\delta + Q\cos\delta$$
+$$Q' = I\sin\delta + Q\cos\delta$$
+
+$$\begin{pmatrix} I'\\Q'\end{pmatrix} = \begin{pmatrix} \cos \delta && -\sin\delta\\ \sin\delta &&\cos \delta\end{pmatrix} \begin{pmatrix} I\\Q\end{pmatrix}. $$

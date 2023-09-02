@@ -45,7 +45,7 @@ $$d = 2^{-12}\sum^N_{n=0}a[n]\left(w_c\left[n\right]\cos(\omega_{IF}t_s n + \phi
 
 For $I$ integration, $w_c[n] = 1$ and $w_c[n]=0$, while the oppposite is true for $Q$.
 
-A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqrt{I^2 + Q^2}$. Exciting the qubit will change the quadratures of the acquired signal and will show up as a feature in the experiment. But we want to go further. By optimizing the integration weights, we can reduce the impact of noise in the integration. We can also project the information in one of the quadratures, say $I$, to be used for optimal readout. Then let's see what else integration weights can offer.
+A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqrt{I^2 + Q^2}$. Exciting the qubit will change the quadratures of the acquired signal and will show up as a feature in the experiment. But we want to go further. By optimizing the integration weights, we can reduce the impact of noise in the integration. We can also project the information into a single quadrature, say $I$, to be used for optimal readout. So let's see what else integration weights can offer.
 
 # Rotating the signal in phase space
 
@@ -55,8 +55,8 @@ $$X[\omega_{IF}] = I+iQ = (I'+iQ')e^{-i\delta} = X'[\omega_{IF}]e^{-i\delta}$$
 
 The quadratures are transformed as
 
-$$I' = I\cos\delta - Q\sin\delta$$
-
-$$Q' = I\sin\delta + Q\cos\delta$$
-
 $$\begin{pmatrix} I'\\Q'\end{pmatrix} = \begin{pmatrix} \cos \delta && -\sin\delta\\ \sin\delta &&\cos \delta\end{pmatrix} \begin{pmatrix} I\\Q\end{pmatrix}. $$
+
+which can be rewritten as in the formula of quadrature integration:
+$$I' = 2^{-12}\sum_{n=0}^Na[n]\left(\cos{\delta}\cos(\omega_{IF}t_sn) + \sin\delta\sin(\omega_{IF}t_sn) \right)$$ 
+$$Q' = 2^{-12}\sum_{n=0}^Na[n]\left(\sin{\delta}\cos(\omega_{IF}t_sn) - \cos\delta\sin(\omega_{IF}t_sn) \right)$$

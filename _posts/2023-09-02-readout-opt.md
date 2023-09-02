@@ -29,7 +29,7 @@ Let's see how to calculate the pulse quadratures. Besides the signal, the ADC al
 
 $$K[n] = e^{i\omega_{IF} t_s n}$$
 
-$$\rightarrow X[\omega_{IF}] = \braket {K[n]|s[n]} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ$$
+$$\rightarrow X[\omega_{IF}] = \braket {K|s} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ$$
 
 The projection $X[\omega_{IF}]$ is equivalent to the Fourier transform of the signal at frequency $\omega_{IF}$. We are thus ignoring all other frequency components. Since $X[\omega_{IF}]$ is a complex number, it can be written as a sum of a real part $I$ to an imaginary part $Q$. These are the quadratures of $s[n]$.
 

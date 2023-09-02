@@ -29,19 +29,19 @@ Let's see how to calculate the pulse quadratures. Besides the signal, the ADC al
 
 $$K[n] = e^{i\omega_{IF} t_s n}$$
 
-$$\rightarrow X[\omega_{IF}] = \braket {K|s} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ$$
+$$\rightarrow X[\omega_{IF}] = \braket {K|s} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ. $$
 
 The projection $X[\omega_{IF}]$ is equivalent to the Fourier transform of the signal at frequency $\omega_{IF}$. We are thus ignoring all other frequency components. Since $X[\omega_{IF}]$ is a complex number, it can be written as a sum of a real part $I$ to an imaginary part $Q$. These are the quadratures of $s[n]$.
 
 The quadratures are obtained as a sum, or integration, of the signal multiplied by a demodulation factor:
 
-$$I = 2^{-12}\sum_{n=0}^Na[n]\cos(\omega_{IF}t_sn)$$
+$$I = 2^{-12}\sum_{n=0}^Na[n]\cos(\omega_{IF}t_sn),$$
 
-$$Q = -2^{-12}\sum_{n=0}^Na[n]\sin(\omega_{IF}t_sn)$$
+$$Q = -2^{-12}\sum_{n=0}^Na[n]\sin(\omega_{IF}t_sn).$$
 
 We can generalize the quadrature integration formula as a function of weight functions $w_s[n]$ and $w_c[n]$:
 
-$$d = 2^{-12}\sum^N_{n=0}a[n]\left(w_c\left[n\right]\cos(\omega_{IF}t_s n + \phi) +w_s\left[n \right]\sin(\omega_{IF}t_s n + \phi)\right)$$
+$$d = 2^{-12}\sum^N_{n=0}a[n]\left(w_c\left[n\right]\cos(\omega_{IF}t_s n + \phi) +w_s\left[n \right]\sin(\omega_{IF}t_s n + \phi)\right).$$
 
 For $I$ integration, $w_c[n] = 1$ and $w_c[n]=0$, while the oppposite is true for $Q$.
 
@@ -51,12 +51,15 @@ A prototypical qubit readout can simply use $I$, $Q$, or functions such as $\sqr
 
 As previously mentioned, $X[\omega_{IF}]$ is a complex number. A rotation in phase space is as simple as a multiplication by a phase factor:
 
-$$X[\omega_{IF}] = I+iQ = (I'+iQ')e^{-i\delta} = X'[\omega_{IF}]e^{-i\delta}$$
+$$X[\omega_{IF}] = I+iQ = (I'+iQ')e^{-i\delta} = X'[\omega_{IF}]e^{-i\delta}.$$
 
 The quadratures are transformed as
 
-$$\begin{pmatrix} I'\\Q'\end{pmatrix} = \begin{pmatrix} \cos \delta && -\sin\delta\\ \sin\delta &&\cos \delta\end{pmatrix} \begin{pmatrix} I\\Q\end{pmatrix}. $$
+$$\begin{pmatrix} I'\\Q'\end{pmatrix} = \begin{pmatrix} \cos \delta && -\sin\delta\\ \sin\delta &&\cos \delta\end{pmatrix} \begin{pmatrix} I\\Q\end{pmatrix}, $$
 
 which can be rewritten as in the formula of quadrature integration:
+
 $$I' = 2^{-12}\sum_{n=0}^Na[n]\left(\cos{\delta}\cos(\omega_{IF}t_sn) + \sin\delta\sin(\omega_{IF}t_sn) \right)$$ 
+
 $$Q' = 2^{-12}\sum_{n=0}^Na[n]\left(\sin{\delta}\cos(\omega_{IF}t_sn) - \cos\delta\sin(\omega_{IF}t_sn) \right)$$
+

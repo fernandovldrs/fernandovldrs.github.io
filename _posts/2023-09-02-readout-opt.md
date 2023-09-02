@@ -108,4 +108,10 @@ $$env(s) = \frac{1}{2}(s_{filtered}[n])^*.$$
 
 **Important**: We need to make sure the acquired signal $s[n]$ does not have a DC offset. It can be simply removed digitally by subtracting the signal average. Otherwise, the envelope will present ripples oscillating at frequency $\omega_{IF}$ corresponding to the upconverted DC offset.  
 
+## Optimal integration weights as a difference in envelopes
 
+Suppose two signals $s_g[n]$ and $s_e[n]$ are acquired when the qubit is in the ground and excited state. Their envelopes will have very distinct trajectories in phase space. The optimal integration weights, the function that extracts the maximum qubit state discrimination information from the signals, is the difference between the two complex envelopes:
+
+$$w_{opt} = \textrm{env}(s_g)[n] - \textrm{env}(s_e)[n] = W[n]e^{i\theta[n]}.$$
+
+If the envelopes are equal at an instant $n_{eq}$, $\textrm{env}(s_g)[n_{eq}] = \textrm{env}(s_e)[n_{eq}]$ and there is no information about the qubit state, so  $W[n_{eq}] = 0$.

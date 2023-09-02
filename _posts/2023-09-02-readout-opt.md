@@ -134,5 +134,5 @@ To show how the results look like in practice, I got a graph from a recent exper
 
 # Conclusion
 
-Now you know how to read a qubit state by calculating the quadrature components of a probe signal. And also how to optimize this process by calculating the quadratures through weighted integration. The process involves some signal processing protocols, but hopefully these were well-justified. By following this recipe, you will also be able to implement single-shot readout of a superconducting qubit.
+Now you know how to read a qubit state by calculating the quadrature components of a probe signal. And also how to optimize this process by calculating the quadratures through weighted integration. The process involves some signal processing protocols, but hopefully these were well-justified. By following this recipe, you will also be able to implement single-shot readout of a superconducting qubit. 加油!
 

@@ -104,3 +104,4 @@ $$s_{filtered}[n]= (s*h)[n] = \sum_{n'=0}^Ns[n']h[n-n'],$$
 
 where $h[n]$ is the impulse response of a Hann filter, which acts as a low-pass filter to eliminate $2\omega_{IF}$ components on the signal. Since the phase is flipped and the amplitude is halved, we can get the envelope as
 
+$$env(a) = \frac{1}{2}(s_{filtered}[n])^*.$$

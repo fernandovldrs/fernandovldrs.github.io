@@ -36,4 +36,5 @@ $$K[n] = e^{i\omega_{IF} t_s n}$$
 
 $$\rightarrow X[\omega_{IF}] = \braket {K[n]|s[n]} = \sum_{n=0}^Ns[n]e^{-i\omega_{IF} t_s n} = I +iQ = Ae^{i\theta}.$$
 
+Note the projection $X[\omega_{IF}]$ is the Fourier transform of the signal at frequency $\omega_{IF}$. We are therefore ignoring all other frequency components. Since it is a complex number, it can be written as a sum of a real part $I$ to an imaginary part $Q$. These are the quadratures of $s[n]$.
 

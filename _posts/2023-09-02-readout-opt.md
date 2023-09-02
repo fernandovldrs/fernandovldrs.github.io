@@ -31,8 +31,7 @@ This is what the ADC-aquired signal looks like:
 In this example, the digital signal $s[n]$ has a carrier frequency $\omega_{IF} =$50 MHz and a simple 400ns square envelope. Also in my case, the ADC has a resolution of $2^{-12}$, so the amplitude of the acquired pulse trace can be converted to volts by multiplying by the same factor. 
 
 Now let's see how to calculate the pulse quadratures. Besides the signal, the ADC also acquires white noise that travels through the lines. But we want to parse the noise from the readout information as much as possible. To do so, we project the pulse onto a constant wave $K[n]$ oscillating at the same frequency:
-$$
-K[n] = e^{i\omega_{IF} t_s n}\\
-\rightarrow X[k] = \braket {K|2^{-12}a}
-$$
+$$K[n] = e^{i\omega_{IF} t_s n}$$
+$$\rightarrow X[k] = \braket {K|2^{-12}a}$$
+
 

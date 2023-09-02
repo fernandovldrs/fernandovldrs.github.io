@@ -114,4 +114,6 @@ Suppose two signals $s_g[n]$ and $s_e[n]$ are acquired when the qubit is in the 
 
 $$w_{opt} = \textrm{env}(s_g)[n] - \textrm{env}(s_e)[n] = W[n]e^{i\theta[n]}.$$
 
-If the envelopes are equal at an instant $n_{eq}$, $\textrm{env}(s_g)[n_{eq}] = \textrm{env}(s_e)[n_{eq}]$ and there is no information about the qubit state, so  $W[n_{eq}] = 0$.
+If the envelopes are equal at an instant $n_{eq}$, there is no information about the qubit state and $w_{opt}[n_{eq}] = 0$.
+
+Additionally, the phase of $w_{opt}[n]$ will rotate the excited- and ground-state $(I,Q)$ pairs so they are aligned with the real axis of the complex plane, so we only need to care about the quadrature $I$. The red arrow in the figure below is a demonstration of the difference between both envelopes. It has a phase of $arg(w_{opt}[n]) = -\theta[n]$. We eliminate this phase by rotating the plane by $\theta = arg(w_{opt}[n])$ during the demodulation.

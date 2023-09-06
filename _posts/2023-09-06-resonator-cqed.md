@@ -81,12 +81,18 @@ When two superconducting resonators are put geometrically close, their fields ov
 
 ## Capacitive coupling
 
-The circuit in Figure [TODO] shows two LC circuits A and B whose nodes are connected by a gate capacitance #C_g#. Let us define $V_A$, $V_B$ and $V_g$ as the voltages over each element, with orientations such that Kirchhoff voltage law reads as
+The circuit in Figure [TODO] shows two LC circuits A and B whose nodes are connected by a gate capacitance $C_g$. Let us define $V_A$, $V_B$ and $V_g$ as the voltages over each element, with orientations such that Kirchhoff voltage law reads as
 
 $$V_1 + V_2 + V_3 = 0.$$
 
 In terms of flux, we have
 
-$$\dot{\phi}_1 + \dot{\phi}_2 + \dot{\phi}_3 = 0$$
-$$\dot{\phi}_1 = - \dot{\phi}_2 - \dot{\phi}_3$$
+$$\dot{\phi}_g + \dot{\phi}_A + \dot{\phi}_B = 0$$
+
+$rightarrow \dot{\phi}_g = - \dot{\phi}_A - \dot{\phi}_B$$
+
+Following the quantization procedure in the last section and substituting $\dot{\phi_g}$, the Lagrangian is
+
+$$ L = \frac{C_A}{2}\dot{\phi}_A^2 + \frac{C_B}{2}\dot{\phi}_B^2 +  \frac{C_g}{2}(\dot{\phi}_A + \dot{\phi}_B)^2 -\frac{\phi_B^2}{2L_B} -\frac{\phi_A^2}{2L_A}$$
+
 

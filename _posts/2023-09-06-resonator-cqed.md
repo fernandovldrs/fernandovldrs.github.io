@@ -43,7 +43,7 @@ The kinetic energy is the capacitive energy $T = E_C$, while the potential energ
 
 $$L(Q, i) = \frac{Q^2}{2C} - \frac{L i^2}{2}$$
 
-**3\. Calculate the generalized momentum $p_k$ of each charge $Q_k$: $p_k = \frac{\partial L}{\partial i_k}$ **
+**3\. Calculate the generalized momentum $p_k$ of each charge** $Q_k$: $p_k = \frac{\partial L}{\partial i_k}$
 
 The generalized momentum is $p = -Li = \phi$!
 

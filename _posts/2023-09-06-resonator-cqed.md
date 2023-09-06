@@ -55,10 +55,10 @@ $$H(Q, \phi) = \frac{Q^2}{2C} - \frac{Li^2}{2} - \phi i = \frac{Q^2}{2C} + \frac
 
 The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and $\phi$. It is common to jump to this step and simply write the Hamiltonian as the total energy, and it is correct most of the time. But this might not be so easy to do in more complicated systems, so I decided to show how to get here in the correct way.
 
-**5\. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that $\[\hat{Q}, \hat{\phi}\] = i\hbar$
-**
+**5\. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that** $\[\hat{Q}, \hat{\phi}\] = i\hbar$
 
-This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator is:
+
+This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator then is:
 
 $$\hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L}$$.
 

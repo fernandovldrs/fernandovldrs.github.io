@@ -95,4 +95,10 @@ Following the quantization procedure in the last section and substituting $\dot{
 
 $$ L = \frac{C_A}{2}\dot{\phi}_A^2 + \frac{C_B}{2}\dot{\phi}_B^2 +  \frac{C_g}{2}(\dot{\phi}_A + \dot{\phi}_B)^2 -\frac{\phi_B^2}{2L_B} -\frac{\phi_A^2}{2L_A}$$
 
+The conjugate momenta to $\phi_1$ and $\phi_3$ are, respectively:
 
+$$Q_A = \frac{\partial L}{\partial\dot{\phi}_A} = (C_A + C_g)\dot{\phi}_A + C_g\dot{\phi}_B,$$
+
+$$Q_B = \frac{\partial L}{\partial\dot{\phi}_B} = (C_B + C_g)\dot{\phi}_B + C_g\dot{\phi}_A.
+
+These equations 

@@ -65,9 +65,12 @@ As expected, this is the Hamiltonian of a quantum harmonic oscillator. We can re
 
 $$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(\hat{a}^{\dag} + \hat{a}), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (\hat{a}^{\dag} - \hat{a}),$$
 
-so the Hamiltonian is rewritten as (dropping hats and the constant $1/2$ factor)
+so the Hamiltonian is rewritten as (dropping hats and the constant $1/2$ factor, and setting $\hbar = 1$)
 
 $$H = \omega_r a^\dag a$$
+
+This is the typical form we treat resonators in circuit QED. Many other circuits will include an $a^{\dag} a$ term in its Hamiltonian, and we frequently use this term to implicitly model the environment. Needless to say one must be very comfortable with this notation and its derivation, although the charge-flux basis is rarely used.
+
 
 
 

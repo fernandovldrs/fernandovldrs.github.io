@@ -33,21 +33,21 @@ cQED is the formulation of circuits in the quantum mechanical regime. It is base
 
 The procedure to find a Hamiltonian is often done wrongly, so it is worth showing the general step-by-step. The first step is to obtain the classical Hamiltonian of the circuit, and then substitute the conjugate pairs of dynamical variables by non-commuting operators. In circuit QED, that is:
 
-- 1. Numerate all the nodes of the circuit and define the variables $Q_k$ and $i_k$ for the $k$-th node.
+1\. Numerate all the nodes of the circuit and define the variables $Q_k$ and $i_k$ for the $k$-th node.
 
 In the case of the resonator, there is only one pair of $Q$ and $i = \dot{Q}$.
 
-- 2. Write the Lagrangian in terms of these variables $L(Q_k, i_k, t) = T - V$. T and V are the kinetic and potential energies of the system, respectively.
+2\. Write the Lagrangian in terms of these variables $L(Q_k, i_k, t) = T - V$. T and V are the kinetic and potential energies of the system, respectively.
 
 The kinetic energy is the capacitive energy $T = E_C$, while the potential energy is the inductive energy $V = E_L$. Our lagrangian is
 
 $$L(Q, i) = \frac{Q^2}{2C} - \frac{L i^2}{2}$$
 
-- 3. Calculate the generalized momentum $p_k$ of each charge $Q_k$: $p_k = \frac{\partial L}{\partial i_k}$ 
+3\. Calculate the generalized momentum $p_k$ of each charge $Q_k$: $p_k = \frac{\partial L}{\partial i_k}$ 
 
 The generalized momentum is $p = -Li = \phi$!
 
-- 4. Apply the Legendre transform to the Lagrangian to obtain the Hamiltonian: H(Q_k, p_k, t) = L - \sum_k p_k i_k
+4\. Apply the Legendre transform to the Lagrangian to obtain the Hamiltonian: H(Q_k, p_k, t) = L - \sum_k p_k i_k
 
 In this step, we have to remember to rewrite every $i_k$ as $p_k$. The solution is again very simple for the resonator:
 
@@ -55,5 +55,5 @@ $$H(Q, \phi) = \frac{Q^2}{2C} - \frac{Li^2}{2} - \phi i = \frac{Q^2}{2C} + \frac
 
 The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and $\phi$. It is common to jump to this step and simply write the Hamiltonian as the total energy, and it is correct most of the time. But this might not be so easy to do in more complicated systems, so I decided to show how to get here in the correct way.
 
-- 5. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that $\[\hat{Q}, \hat{\phi}\] = i\hbar$
+5\. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that $\[\hat{Q}, \hat{\phi}\] = i\hbar$
 

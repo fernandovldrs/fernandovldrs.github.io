@@ -61,8 +61,6 @@ This step is sometimes called "first quantization". It is a simple substitution 
 
 $$\hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L}$$
 
-$$\hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L}$$
-
 As expected, this is the Hamiltonian of a quantum harmonic oscillator. We can rewrite the operators as functions of ladder operators:
 
 $$\hat{\phi} = \sqrt{\frac{\hbar}{2C\omega_r}}(\hat{a}^{\dagger} + \hat{a}), \ \hat{Q} = i \sqrt{\frac{\hbar C \omega_r}{2}} (\hat{a}^{\dagger} - \hat{a}),$$

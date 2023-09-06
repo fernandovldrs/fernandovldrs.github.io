@@ -20,12 +20,16 @@ Where $i$ is the current flowing through the inductor and the node flux is defin
 
 $$Q = CV, \ \ i = -\frac{dQ}{dt}, \ \ E_C = -\int_{-\infty}^tV i dt = \frac{Q^2}{2C}. $$
 
-E_C is the capacitive energy stored in the circuit at a given moment. So far, no groundbreaking physics has been shown. This circuit behaves as a harmonic oscillator, as we see in the dynamical equation of the current:
+$E_C$ is the capacitive energy stored in the circuit at a given moment. So far, no groundbreaking physics has been shown. This circuit behaves as a harmonic oscillator, as we see in the dynamical equation of the current:
 
 $$\frac{dQ}{dt} = C\frac{dV}{dt} \rightarrow i = -LC \frac{d^2i}{dt^2}$$
 
-The solution is $i(t) = i_0\cos(\omega_r t + \theta)$, where the current oscillates with a frequency $\omega_r = (LC)^{-\frac{1}{2}}$. This type of system has been studied to exhaustion by any physicist, so there's no need to talk more about it. The interesting part comes next when we assume this circuit can be in quantum states.
+The solution is $i(t) = i_0\cos(\omega_r t + \theta)$, where the current oscillates with a frequency $\omega_r = (LC)^{-\frac{1}{2}}$. This type of system has been studied to exhaustion by any physicist, so there's no need to talk more about it. The interesting part comes next when this circuit becomes quantum.
+
 
 # Circuit quantization: modeling superconducting resonators
 
-cQED is the formulation of circuit parameters in the quantum mechanical regime: node charges and fluxes become quantum variables akin to position and momentum, and the circuit states can maintain properties such as superposition and entanglement as long as the system is protected from the environment.
+cQED is the formulation of circuits in the quantum mechanical regime. It is based on a very straightforward (although complex) premise that we can quantize the parameters of the circuit. The node charges $Q$ and fluxes $\phi$ become quantum variables described by operators and the circuit state evolves according to the Schrodinger equation. But to follow through with this idea, as with any quantum problem, we need to find the correct Hamiltonian.
+
+The procedure to find a Hamiltonian is often done wrongly, so it is worth showing the general step-by-step. The first step is to obtain the classical Hamiltonian of the circuit, and then substitute the conjugate pairs of dynamical variables by non-commuting operators. In circuit QED, that is:
+1. Numerate all the nodes of the circuit and define the variables $Q_k$ and $i_k$ for the $k$-th node.

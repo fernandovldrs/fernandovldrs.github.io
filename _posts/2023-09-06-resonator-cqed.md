@@ -60,6 +60,11 @@ The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and 
 
 This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator then is:
 
+
 $$\hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L}$$.
 
-As expected, this is the Hamiltonian of a quantum harmonic oscillator.
+As expected, this is the Hamiltonian of a quantum harmonic oscillator. So we can rewrite the operators as functions of ladder operators:
+
+$$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(a^\dag + a), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (a^\dag - a)$$
+
+

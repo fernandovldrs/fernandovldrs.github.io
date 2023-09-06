@@ -16,9 +16,14 @@ $$
 V = L\frac{di}{dt}, \ \ L = -\frac{\phi}{i}, \ \ E_L = \int_{-\infty}^tV i dt = \frac{\phi^2}{2L}. 
 $$
 
-Where $i$ is the current flowing through the inductor and the node flux is defined as $\phi = \int_{-\infty}^tV(t)dt$. $E_L$ is the inductive energy stored in the circuit at a given moment $t$, assuming all variables are null at $t\to-\infty$. The capacitor shares the current and voltage over the inductor, and follows the known dynamics
+Where $i$ is the current flowing through the inductor and the node flux is defined as $\phi = \int_{-\infty}^tV(t)dt$. $E_L$ is the inductive energy stored in the circuit at a given moment $t$, assuming all variables are null at $t\to-\infty$. The capacitor shares the current and voltage over the inductor and follows the known dynamics
 
 $$Q = CV, \ \ i = -\frac{dQ}{dt}, \ \ E_C = -\int_{-\infty}^tV i dt = \frac{Q^2}{2C}. $$
 
-So far
+E_C is the capacitive energy stored in the circuit at a given moment. So far, no groundbreaking physics has been shown. This circuit behaves as a harmonic oscillator, as we see in the dynamical equation of the current:
+
+$$\frac{dQ}{dt} = C\frac{dV}{dt} \rightarrow i = -LC \frac{d^2i}{dt^2}$$
+
+The solution is $i(t) = i_0\cos(\omega_r t + \theta)$, where the current oscillates with a frequency $\omega_r = (LC)^{\frac{1}{2}$.
+
 cQED is the formulation of circuit parameters in the quantum mechanical regime: node charges and fluxes become quantum variables akin to position and momentum, and the circuit states can maintain properties such as superposition and entanglement as long as the system is protected from the environment.

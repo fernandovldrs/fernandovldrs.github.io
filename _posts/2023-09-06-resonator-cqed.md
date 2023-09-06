@@ -33,9 +33,11 @@ cQED is the formulation of circuits in the quantum mechanical regime. It is base
 
 The procedure to find a Hamiltonian is often done wrongly, so it is worth showing the general step-by-step. The first step is to obtain the classical Hamiltonian of the circuit, and then substitute the conjugate pairs of dynamical variables by non-commuting operators. In circuit QED, that is:
 1. Numerate all the nodes of the circuit and define the variables $Q_k$ and $i_k$ for the $k$-th node.
+
 In the case of the resonator, there is only one pair of $Q$ and $i = \dot{Q}$.
 
 2. Write the Lagrangian in terms of these variables $L(Q_k, i_k, t) = T - V$. T and V are the kinetic and potential energies of the system, respectively.
+
 The kinetic energy is the capacitive energy $T = E_C$, while the potential energy is the inductive energy $V = E_L$. Our lagrangian is
 
 $$L(Q, i) = \frac{Q^2}{2C} - \frac{L i^2}{2}$$

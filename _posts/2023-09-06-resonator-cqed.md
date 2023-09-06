@@ -55,5 +55,5 @@ $$H(Q, \phi) = \frac{Q^2}{2C} - \frac{Li^2}{2} - \phi i = \frac{Q^2}{2C} + \frac
 
 The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and $\phi$. It is common to jump to this step and simply write the Hamiltonian as the total energy, and it is correct most of the time. But this might not be so easy to do in more complicated systems, so I decided to show how to get here in the correct way.
 
-- 5. Quantize the Hamiltonian
+- 5. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that $\[\hat{Q}, \hat{\phi}\] = i\hbar$
 

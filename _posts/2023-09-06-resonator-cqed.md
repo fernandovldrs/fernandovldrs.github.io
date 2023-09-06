@@ -63,9 +63,11 @@ $$ \hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L} $$.
 
 As expected, this is the Hamiltonian of a quantum harmonic oscillator. We can rewrite the operators as functions of ladder operators:
 
-$$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(\hat{a}^\dag + \hat{a}), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (\hat{a}^\dag - \hat{a}),$$
+$$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(\hat{a}^{\dag} + \hat{a}), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (\hat{a}^{\dag} - \hat{a}),$$
 
-so the Hamiltonian is rewritten as
+so the Hamiltonian is rewritten as (dropping hats and the constant $1/2$ factor)
 
 $$H = \omega_r a^\dag a$$
+
+
 

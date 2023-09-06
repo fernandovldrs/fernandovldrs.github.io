@@ -57,7 +57,7 @@ The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and 
 
 **5\. Quantize the Hamiltonian by replacing the variables $Q_k$ and $\phi_k$ by operators $\hat{Q}_k$ and $\hat{\phi}_k$ such that** $\[\hat{Q}_k, \hat{\phi}_k\] = i\hbar$
 
-This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator then is:
+This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator then is: $$
 
 $$ \hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L} $$.
 

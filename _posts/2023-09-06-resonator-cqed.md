@@ -89,7 +89,7 @@ In terms of flux, we have
 
 $$\dot{\phi}_g + \dot{\phi}_A + \dot{\phi}_B = 0$$
 
-$rightarrow \dot{\phi}_g = - \dot{\phi}_A - \dot{\phi}_B$$
+$ \rightarrow \dot{\phi}_g = - \dot{\phi}_A - \dot{\phi}_B$$
 
 Following the quantization procedure in the last section and substituting $\dot{\phi_g}$, the Lagrangian is
 

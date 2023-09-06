@@ -13,7 +13,7 @@ This post will give the first introduction to this device. First, we take a look
 In classical electrical circuits, the resonator is nothing more than an LC circuit. That is, it can be modeled as a capacitor shunted by an inductor. If one node of the circuit is grounded, the second node has a voltage $V$. Then the inductor follows the dynamical equations
 
 $$
-V = L\frac{di}{dt}^{\dagger}, \ \ L = -\frac{\phi}{i}, \ \ E_L = \int_{-\infty}^tV i dt = \frac{L i^2}{2} = \frac{\phi^2}{2L}. 
+V = L\frac{di}{dt}, \ \ L = -\frac{\phi}{i}, \ \ E_L = \int_{-\infty}^tV i dt = \frac{L i^2}{2} = \frac{\phi^2}{2L}. 
 $$
 
 Where $i$ is the current flowing through the inductor and the node flux is defined as $\phi = \int_{-\infty}^tV(t)dt$. $E_L$ is the inductive energy stored in the circuit at a given moment $t$, assuming all variables are null at $t\to-\infty$. The capacitor shares the current and voltage over the inductor and follows the known dynamics
@@ -63,13 +63,13 @@ $$ \hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L} $$.
 
 As expected, this is the Hamiltonian of a quantum harmonic oscillator. We can rewrite the operators as functions of ladder operators:
 
-$$\hat{\phi} = \sqrt{\frac{\hbar}{2C\omega_r}}(\hat{a}^{\dag} + \hat{a}), \ \hat{Q} = i \sqrt{\frac{\hbar C \omega_r}{2}} (\hat{a}^{\dag} - \hat{a}),$$
+$$\hat{\phi} = \sqrt{\frac{\hbar}{2C\omega_r}}(\hat{a}^{\dagger} + \hat{a}), \ \hat{Q} = i \sqrt{\frac{\hbar C \omega_r}{2}} (\hat{a}^{\dagger} - \hat{a}),$$
 
 so the Hamiltonian is rewritten as (dropping hats and the constant $1/2$ factor and setting $\hbar = 1$)
 
-$$H = \omega_r a^\dag a$$
+$$H = \omega_r a^\dagger a$$
 
-This is the typical form we treat resonators in circuit QED. Many other circuits will include an $a^{\dag} a$ term in its Hamiltonian, and we frequently use this term to implicitly model the environment. Needless to say one must be very comfortable with this notation and its derivation, although the charge-flux basis is rarely used.
+This is the typical form we treat resonators in circuit QED. Many other circuits will include an $a^{\dagger} a$ term in its Hamiltonian, and we frequently use this term to implicitly model the environment. Needless to say one must be very comfortable with this notation and its derivation, although the charge-flux basis is rarely used.
 
 
 

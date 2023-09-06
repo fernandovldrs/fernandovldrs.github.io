@@ -8,6 +8,10 @@ If you wish to learn more about circuit quantum electrodynamics (cQED), this is 
 
 This post will give the first introduction to this device. First, we take a look at resonators in classical physics. Then we lay down the recipe for translating classical circuits into quantum mechanics. We apply this procedure to a lump-element resonator, which is a simple but useful model. To wrap up, we will see how the same procedure can be used for more realistic distributed-element circuits, which gives origin to multi-mode resonators. By the end, you will have an idea of how to apply the same procedure to other circuits, as will be done in future posts.
 
+# Table of Contents
+* TOC
+{:toc}
+
 # The classical resonator
 
 In classical electrical circuits, the resonator is nothing more than an LC circuit. That is, it can be modeled as a capacitor shunted by an inductor. If one node of the circuit is grounded, the second node has a voltage $V$. Then the inductor follows the dynamical equations

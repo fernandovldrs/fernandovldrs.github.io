@@ -55,16 +55,17 @@ $$H(Q, \phi) = \frac{Q^2}{2C} - \frac{Li^2}{2} - \phi i = \frac{Q^2}{2C} + \frac
 
 The Hamiltonian is essentially the total energy $E_C + E_L$ in terms of $Q$ and $\phi$. It is common to jump to this step and simply write the Hamiltonian as the total energy, and it is correct most of the time. But this might not be so easy to do in more complicated systems, so I decided to show how to get here in the correct way.
 
-**5\. Quantize the Hamiltonian by replacing the variables $Q$ and $\phi$ by operators $\hat{Q}$ and $\hat{\phi}$ such that** $\[\hat{Q}, \hat{\phi}\] = i\hbar$
-
+**5\. Quantize the Hamiltonian by replacing the variables $Q_k$ and $\phi_k$ by operators $\hat{Q}_k$ and $\hat{\phi}_k$ such that** $\[\hat{Q}_k, \hat{\phi}_k\] = i\hbar$
 
 This step is sometimes called "first quantization". It is a simple substitution that makes the function $H(Q, \phi)$ into an operator $\hat{H}(\hat{Q}, \hat{\phi})$. The Hamiltonian of a superconducting resonator then is:
 
-
 $$\hat{H} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\phi}^2}{2L}$$.
 
-As expected, this is the Hamiltonian of a quantum harmonic oscillator. So we can rewrite the operators as functions of ladder operators:
+As expected, this is the Hamiltonian of a quantum harmonic oscillator. We can rewrite the operators as functions of ladder operators:
 
-$$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(a^\dag + a), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (a^\dag - a)$$
+$$\hat{\phi} = \sqrt{\frac{\hbar}{2Cw_r}}(\hat{a}^\dag + \hat{a}), \ \ \hat{Q} = i \sqrt{\frac{\hbar C w_r}{2}} (\hat{a}^\dag - \hat{a}),$$
 
+so the Hamiltonian is rewritten as
+
+$$H = \omega_r a^\dag a$$
 

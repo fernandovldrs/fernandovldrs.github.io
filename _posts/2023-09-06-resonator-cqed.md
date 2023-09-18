@@ -119,9 +119,9 @@ $$H_B = \frac{C_B + C_g}{2D}Q_B^2 + \frac{1}{2L_R}\phi_B^2,$$
 
 $$H_g = -\frac{C_g}{D}Q_AQ_B.$$
 
-Finally, we quantize the canonical variables by substituting for operators $Q_i \rightarrow \hat{Q}_i$, $\phi \rightarrow \hat{\phi}_i$. We can further develop the Hamiltonian by defining ladder operators $\hat{a}$,  $\hat{b}$ that diagonalize $H_A$ and $H_B$, leading to
+Finally, we quantize the canonical variables by substituting for operators $Q_i \rightarrow \hat{Q}_i$, $\phi \rightarrow \hat{\phi}_i$. We can further develop the Hamiltonian by defining ladder operators $\hat{a}$,  $\hat{b}$ that diagonalize $H_A$ and $H_B$, leading to ($\hbar = 1$)
 
-$$H = \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b - \hbar g \left(a^{\dagger} - a\right)\left(b^{\dagger} - b\right).$$
+$$H = w_A a^{\dagger}a + w_Bb^{\dagger}b - g \left(a^{\dagger} - a\right)\left(b^{\dagger} - b\right).$$
 
 The capacitive coupling Hamiltonian is represented by a coupling factor $g$, which has the value
 
@@ -131,11 +131,11 @@ The capacitive coupling is a very important term in circuit QED. The interaction
 
 Before we proceed, I want to introduce a simplifying approximation that is also a very frequently used technique. Expanding the capacitive coupling term gives
 
-$$H_g = - \hbar g (a^{\dagger}b^{\dagger} + ab - a^{\dagger}b - ab^{\dagger}).$$
+$$H_g = -g (a^{\dagger}b^{\dagger} + ab - a^{\dagger}b - ab^{\dagger}).$$
 
 There are two types of terms here: the co-rotating terms $a^{\dagger}b$, $ab^{\dagger}$, and the counter-rotating terms $a^{\dagger}b^{\dagger}$, $ab$. There are many ways to interpret these two types of terms, so I will offer one explanation. The co-rotating terms describe an evolution where one excitation is removed from one of the resonators while one excitation is created in the other resonator. The energy required to activate such dynamics is $\hbar (\omega_A - \omega_B) $, which is the difference in energy between the excitations. Meanwhile, the counter-rotating terms describe the simultaneous gain ($a^{\dagger}b^{\dagger}$) or loss ($ab$) of excitations from both resonators, implying a change of energy of magnitude $\hbar (\omega_A + \omega_B)$. As we work in a regime where $\omega_A \approx \omega_B$, the counter-rotating terms have a much higher "energy cost". Unless $g$ has a relatively high value ($g 	\gtrsim \omega_A + \omega_B$), we can safely ignore them. This is called the rotating wave approximation (RWA) and it leaves only the co-rotating terms in the Hamiltonian:
 
-$$H \approx \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b + \hbar g(a^{\dagger}b + ab^{\dagger})$$
+$$H \approx w_A a^{\dagger}a + w_Bb^{\dagger}b + g(a^{\dagger}b + ab^{\dagger})$$
 
 ## Hybridization of coupled resonant modes
 

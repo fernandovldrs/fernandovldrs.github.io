@@ -31,7 +31,7 @@ $$\frac{dQ}{dt} = C\frac{dV}{dt} \rightarrow i = -LC \frac{d^2i}{dt^2}$$
 The solution is $i(t) = i_0\cos(\omega_r t + \theta)$, where the current oscillates with a frequency $\omega_r = (LC)^{-\frac{1}{2}}$. This type of system has been studied to exhaustion by any physicist, so there's no need to talk more about it. The interesting part comes next when this circuit becomes quantum.
 
 
-# Circuit quantization: modeling superconducting resonators
+# Quantization of superconducting resonators
 
 cQED is the formulation of circuits in the quantum mechanical regime. It is based on a very straightforward (although complex) premise that we can quantize the parameters of the circuit. The node charges $Q$ and fluxes $\phi$ become quantum variables described by operators and the circuit state evolves according to the Schrodinger equation. But to follow through with this idea, as with any quantum problem, we need to find the correct Hamiltonian.
 

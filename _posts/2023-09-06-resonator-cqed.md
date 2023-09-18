@@ -121,7 +121,7 @@ $$H_g = -\frac{C_g}{D}Q_AQ_B.$$
 
 Finally, we quantize the canonical variables by substituting for operators $Q_i \rightarrow \hat{Q}_i$, $\phi \rightarrow \hat{\phi}_i$. We can further develop the Hamiltonian by defining ladder operators $\hat{a}$,  $\hat{b}$ that diagonalize $H_A$ and $H_B$, leading to
 
-$$H = \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b - \hbar g \left(b^{\dagger} - b\right)\left(a^{\dagger} - a\right).$$
+$$H = \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b - \hbar g \left(a^{\dagger} - a\right)\left(b^{\dagger} - b\right).$$
 
 The capacitive coupling Hamiltonian is represented by a coupling factor $g$, which has the value
 
@@ -133,6 +133,10 @@ The capacitive coupling is a very important term in circuit QED. The interaction
 
 Let's go back to our uncoupled (bare) resonator modes $\omega_A a^{\dagger}a$ and $\omega_B b^{\dagger}b$. As seen in the last section, they come from two separate LC circuits with resonance frequencies $\omega_{A, B}$. However, when they are connected by a gate capacitance $C_g$, the resonant modes are disturbed and $\omega_{A, B}$ stop being resonance frequencies of the system. We want to find the new resonant modes with frequencies $\tilde{\omega}_{A,B}$, which turns out to be always possible through a mindful redefinition $\hat{a} \rightarrow \tilde{a}$, $\hat{b} \rightarrow \tilde{b}$.
 
+Before we proceed, I want to introduce a simplifying approximation that is also a very frequently used technique. Expanding the capacitive coupling term gives
+
+$$H_g = - \hbar g (a^{\dagger}b^{\dagger} + ab - a^{\dagger}b - ab^{\dagger}$$
+
 Let's start by rewriting the Hamiltonian in the matrix form
 
-$$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a^{\dagger} \\ b^{\dagger} \end{pmatrix}$$
+$$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a\\ b \end{pmatrix}$$

@@ -89,7 +89,7 @@ In terms of flux, we have
 
 $$\dot{\phi}_g + \dot{\phi}_A + \dot{\phi}_B = 0$$
 
-$ \rightarrow \dot{\phi}_g = - \dot{\phi}_A - \dot{\phi}_B$$
+$ \rightarrow \dot{\phi}_g = - \dot{\phi}_A - \dot{\phi}_B$
 
 Following the quantization procedure in the last section and substituting $\dot{\phi_g}$, the Lagrangian is
 
@@ -99,6 +99,6 @@ The conjugate momenta to $\phi_1$ and $\phi_3$ are, respectively:
 
 $$Q_A = \frac{\partial L}{\partial\dot{\phi}_A} = (C_A + C_g)\dot{\phi}_A + C_g\dot{\phi}_B,$$
 
-$$Q_B = \frac{\partial L}{\partial\dot{\phi}_B} = (C_B + C_g)\dot{\phi}_B + C_g\dot{\phi}_A.
+$$Q_B = \frac{\partial L}{\partial\dot{\phi}_B} = (C_B + C_g)\dot{\phi}_B + C_g\dot{\phi}_A.$$
 
 These equations 

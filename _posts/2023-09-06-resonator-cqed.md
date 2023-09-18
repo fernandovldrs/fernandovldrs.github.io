@@ -127,4 +127,9 @@ The capacitive coupling Hamiltonian is represented by a coupling factor $g$, whi
 
 $$g = \frac{C_g}{2D} \sqrt{\frac{C_AC_B}{L_AL_B}}.$$
 
+The capacitive coupling is a very important term in circuit QED. The interactions between circuits, and of these with external drives, are usually described by this Hamiltonian for a given factor $g$. It is then essential to understand how to deal with this term once it shows up. In the next section, I will show how we can redefine the ladder operators to hybridize the modes $\hat{a}$ and $\hat{b}$, making the coupling term vanish.
+
+## Hybridization of coupled resonant modes
+
+Let's go back to our uncoupled (bare) resonator modes $\omega_A a^{\dagger}a$ and $\omega_B b^{\dagger}b$. As seen in the last section, they come from two separate LC circuits with resonance frequencies $\omega_{A, B}$. However, when they are connected by a gate capacitance $C_g$, the resonant modes are disturbed and $\omega_{A, B}$ stop being resonance frequencies of the system. We want to find the new resonant modes with frequencies $\tilde{\omega}_{A,B}$, which turns out to be always possible by a mindful redefinition $\hat{a} \rightarrow \tilde{a}$, $\hat{b} \rightarrow \tilde{b}$.
 

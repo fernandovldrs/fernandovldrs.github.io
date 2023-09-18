@@ -141,7 +141,7 @@ $$H \approx w_A a^{\dagger}a + w_Bb^{\dagger}b + g(a^{\dagger}b + ab^{\dagger})$
 
 Let's go back to our uncoupled (bare) resonator modes $\omega_A a^{\dagger}a$ and $\omega_B b^{\dagger}b$. As seen in the last section, they come from two separate LC circuits with resonance frequencies $\omega_{A, B}$. However, once they are connected by a gate capacitance $C_g$, the resonant modes are disturbed and $\omega_{A, B}$ stop being resonance frequencies of the system. We want to find the new resonant modes with frequencies $\tilde{\omega}_{A,B}$, and that turns out to always be possible through a mindful redefinition $\hat{a} \rightarrow \tilde{a}$, $\hat{b} \rightarrow \tilde{b}$.
 
-Let's start by rewriting the Hamiltonian (after the RWA) in the matrix form
+Rewriting the Hamiltonian (after the RWA) in the matrix form:
 
 $$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a\\ b \end{pmatrix}$$
 

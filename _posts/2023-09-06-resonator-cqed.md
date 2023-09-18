@@ -6,7 +6,7 @@ layout: post
 
 If you wish to learn more about circuit quantum electrodynamics (cQED), this is where you should start. To eventually understand the design of superconducting quantum processors, the best strategy is to first understand the simplest quantum circuit: the superconducting resonator. 
 
-This post will give the first introduction to this device. First, we take a look at resonators in classical physics. Then we lay down the recipe for translating classical circuits into quantum mechanics. We apply this procedure to a lump-element resonator, which is a simple but useful model. To wrap up, we will see how the same procedure can be used for more realistic distributed-element circuits, which gives origin to multi-mode resonators. By the end, you will have an idea of how to apply the same procedure to other circuits, as will be done in future posts.
+This post will give the first introduction to this device. First, we take a look at resonators in classical physics. Then we lay down the recipe for translating classical circuits into quantum mechanics. We apply this procedure to a lump-element resonator, which is a simple but useful model. To wrap up, we will see how to deal with circuits with multiple resonant modes. By the end, you will have an idea of how to apply the same procedure to other circuits, as will be done in future posts.
 
 # Table of Contents
 * TOC
@@ -158,3 +158,9 @@ $$\begin{pmatrix}\tilde{a} \\ \tilde{b} \end{pmatrix} = \begin{pmatrix}\cos\Lamb
 so that the resonant new modes are hybridizations of the previous modes: e.g. $\tilde{a} = \cos\Lambda a + \sin\Lambda b$. 
 
 This procedure can be readily generalized to more than two resonators. In fact, the same technique is used to deal with the linear terms of nonlinear circuits such as qubits, simplifying qubit-resonator or qubit-qubit hamiltonians.
+
+#Conclusion
+
+We have gone through the mathematical details of treating a resonator in circuit QED. We covered the quantization procedure from ground-up, through which the resonator reveals the dynamics of a quantum harmonic oscillator. Then, we saw how two resonators can be coupled together and how to simplify the Hamiltonian in such cases. 
+
+The resonator is too simple of a circuit, and we can't do quantum computation by relying only on them. So, in the future, I will write about how we can model transmons in cQED and how we can use them to make qubits. The knowledge we developed in this post will be essential, so try to develop the equations yourself. 加油!

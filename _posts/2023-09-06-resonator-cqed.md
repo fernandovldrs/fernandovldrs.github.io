@@ -145,4 +145,10 @@ Let's start by rewriting the Hamiltonian (after the RWA) in the matrix form
 
 $$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a\\ b \end{pmatrix}$$
 
-Turns out the Hamiltonian is described by a symmetric matrix, that is, equal to its transpose
+Turns out the Hamiltonian is described by a symmetric matrix, that is, equal to its transpose. Symmetric matrices with non-degenerate eigenvalues always have orthogonal eigenvectors with real eigenvalues - this implies that it can be diagonalized by frame rotations. So there exists a rotation angle $\Lambda$ such that
+
+$$\begin{pmatrix} \cos\Lambda & \sin\Lambda \\ -\sin\Lambda & \cos\Lambda \end{pmatrix} \begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} \cos\Lambda & -\sin\Lambda \\ \sin\Lambda & \cos\Lambda \end{pmatrix} = \begin{pmatrix} \tilde{\omega}_A && 0 \\ 0 && \tilde{\omega}_B. \end{pmatrix}
+
+That is, in such a frame, there are two decoupled resonant modes with frequencies $\tilde{\omega}_{A,B}$. The ladder operators of the new resonant modes are calculated from the change of frame
+
+$$\begin{pmatrix}\tilde{a} \\ \tilde{b} \end{pmatrix} = \begin{pmatrix}\cos\Lambda & \sin\Lambda \\-\sin\Lambda & \cos\Lambda\end{pmatrix} \begin{pmatrix}a \\b$$

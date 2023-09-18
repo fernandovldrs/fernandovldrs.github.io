@@ -53,7 +53,7 @@ The generalized momentum is $p = -Li = \phi$!
 
 **4\. Apply the Legendre transform to the Lagrangian to obtain the classical Hamiltonian: $H(Q_k, p_k, t) = L - \sum_k p_k i_k$**
 
-In this step, we have to remember to rewrite every $i_k$ as $p_k$. The solution is again very simple for the resonator:
+In this step, we have to remember to rewrite every $i_k$ in terms of its momentum. The solution is again very simple for the resonator:
 
 $$H(Q, \phi) = \frac{Q^2}{2C} - \frac{Li^2}{2} - \phi i = \frac{Q^2}{2C} + \frac{\phi^2}{2L} $$
 

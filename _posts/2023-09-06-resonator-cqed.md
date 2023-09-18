@@ -129,13 +129,18 @@ $$g = \frac{C_g}{2D} \sqrt{\frac{C_AC_B}{L_AL_B}}.$$
 
 The capacitive coupling is a very important term in circuit QED. The interactions between circuits, and of these with external drives, are usually described by this Hamiltonian for a given factor $g$. It is then essential to understand how to deal with this term once it shows up. In the next section, I will show how we can redefine the ladder operators to hybridize the modes $\hat{a}$ and $\hat{b}$, making the coupling term vanish.
 
+Before we proceed, I want to introduce a simplifying approximation that is also a very frequently used technique. Expanding the capacitive coupling term gives
+
+$$H_g = - \hbar g (a^{\dagger}b^{\dagger} + ab - a^{\dagger}b - ab^{\dagger}).$$
+
+There are two types of terms here: the co-rotating terms $a^{\dagger}b$, $ab^{\dagger}$, and the counter-rotating terms $a^{\dagger}b^{\dagger}$, $ab$. There are many ways to interpret these two types of terms, so I will offer one explanation. The co-rotating terms describe an evolution where one excitation is removed from one of the resonators while one excitation is created in the other resonator. The energy required to activate such dynamics is $\hbar|(\omega_A - \omega_B)|$, which is the difference in energy between the excitations. Meanwhile, the counter-rotating terms describe the simultaneous gain ($a^{\dagger}b^{\dagger}$) or loss ($ab$) of excitations from both resonators, implying a change of energy of magnitude $\hbar|(\omega_A + \omega_B)|$. As we work in a regime where $\omega_A \approx \omega_B$, the counter-rotating terms have a much higher "energy cost". Unless $g$ has a relatively high value ($g 	\gtrsim \omega_A + \omega_B$), we can safely ignore them. This is called the rotating wave approximation (RWA) and it leaves only the co-rotating terms in the Hamiltonian:
+
+$$H \approx \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b + \hbar g(a^{\dagger}b - ab^{\dagger})$$
+
 ## Hybridization of coupled resonant modes
 
 Let's go back to our uncoupled (bare) resonator modes $\omega_A a^{\dagger}a$ and $\omega_B b^{\dagger}b$. As seen in the last section, they come from two separate LC circuits with resonance frequencies $\omega_{A, B}$. However, when they are connected by a gate capacitance $C_g$, the resonant modes are disturbed and $\omega_{A, B}$ stop being resonance frequencies of the system. We want to find the new resonant modes with frequencies $\tilde{\omega}_{A,B}$, which turns out to be always possible through a mindful redefinition $\hat{a} \rightarrow \tilde{a}$, $\hat{b} \rightarrow \tilde{b}$.
 
-Before we proceed, I want to introduce a simplifying approximation that is also a very frequently used technique. Expanding the capacitive coupling term gives
-
-$$H_g = - \hbar g (a^{\dagger}b^{\dagger} + ab - a^{\dagger}b - ab^{\dagger}$$
 
 Let's start by rewriting the Hamiltonian in the matrix form
 

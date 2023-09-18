@@ -104,6 +104,17 @@ $$Q_B = \frac{\partial L}{\partial\dot{\phi}_B} = (C_B + C_g)\dot{\phi}_B + C_g\
 These equations are not as trivial to find if not following the step-by-step quantization. Rewriting in terms of the first flux derivative:
 
 $$\dot{\phi}_A = \frac{C_A + C_g}{D}Q_A - \frac{C_g}{D}Q_B,$$
+
 $$\dot{\phi}_B = \frac{C_B + C_g}{D}Q_B - \frac{C_g}{D}Q_A,$$
 
+where $D = C_AC_B + C_AC_g + C_BC_g$. Now we get the Hamiltonian in terms of $\phi_A$, $\phi_B$, Q$_A$ and Q$_B$:
 
+$$H = \dot{\phi}_AQ_A + \dot{\phi}_BQ_ B - L = H_A + H_B + H_g.$$
+
+$H_A$ and $H_B$ are each resonator's term, while $H_g$ describes the coupling between them: 
+
+$$H_A = \frac{C_A + C_g}{2D}Q_A^2 + \frac{1}{2L_R}\phi_A^2,$$
+
+$$H_B = \frac{C_B + C_g}{2D}Q_B^2 + \frac{1}{2L_R}\phi_B^2,$$
+
+$$H_g = -\frac{C_g}{D}Q_AQ_B.$$

@@ -121,7 +121,7 @@ $$H_g = -\frac{C_g}{D}Q_AQ_B.$$
 
 Finally, we quantize the canonical variables by substituting for operators $Q_i \rightarrow \hat{Q}_i$, $\phi \rightarrow \hat{\phi}_i$. We can further develop the Hamiltonian by defining ladder operators $\hat{a}$,  $\hat{b}$ that diagonalize $H_A$ and $H_B$, leading to
 
-$$H = \hbar w_A a^{\dag}a + \hbar w_Bb^{\dag}b - \hbar g \left(b^{\dag} - b\right)\left(a^{\dag} - a\right).$$
+$$H = \hbar w_A a^{\dagger}a + \hbar w_Bb^{\dagger}b - \hbar g \left(b^{\dagger} - b\right)\left(a^{\dagger} - a\right).$$
 
 The capacitive coupling Hamiltonian is represented by a coupling factor $g$, which has the value
 

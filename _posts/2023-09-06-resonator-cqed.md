@@ -95,10 +95,15 @@ Following the quantization procedure in the last section and substituting $\dot{
 
 $$ L = \frac{C_A}{2}\dot{\phi}_A^2 + \frac{C_B}{2}\dot{\phi}_B^2 +  \frac{C_g}{2}(\dot{\phi}_A + \dot{\phi}_B)^2 -\frac{\phi_B^2}{2L_B} -\frac{\phi_A^2}{2L_A}$$
 
-The conjugate momenta to $\phi_1$ and $\phi_3$ are, respectively:
+The conjugate momenta to $\phi_A$ and $\phi_B$ are, respectively:
 
 $$Q_A = \frac{\partial L}{\partial\dot{\phi}_A} = (C_A + C_g)\dot{\phi}_A + C_g\dot{\phi}_B,$$
 
 $$Q_B = \frac{\partial L}{\partial\dot{\phi}_B} = (C_B + C_g)\dot{\phi}_B + C_g\dot{\phi}_A.$$
 
-These equations 
+These equations are not as trivial to find if not following the step-by-step quantization. Rewriting in terms of the first flux derivative:
+
+$$\dot{\phi}_A = \frac{C_A + C_g}{D}Q_A - \frac{C_g}{D}Q_B,$$
+$$\dot{\phi}_B = \frac{C_B + C_g}{D}Q_B - \frac{C_g}{D}Q_A,$$
+
+

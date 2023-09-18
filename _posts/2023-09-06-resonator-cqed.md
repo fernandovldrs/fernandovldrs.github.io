@@ -135,4 +135,4 @@ Let's go back to our uncoupled (bare) resonator modes $\omega_A a^{\dagger}a$ an
 
 Let's start by rewriting the Hamiltonian in the matrix form
 
-$$H = \begin{pmatrix} a^{\dagger} $ b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A & -g \\ -g $ \omega_B \end{pmatrix} \begin{pmatrix} a^{\dagger} \\ b^{\dagger} \end{pmatrix}$$
+$$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a^{\dagger} \\ b^{\dagger} \end{pmatrix}$$

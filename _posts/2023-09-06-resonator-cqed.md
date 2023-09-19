@@ -157,7 +157,7 @@ so that the resonant new modes are hybridizations of the previous modes: e.g. $\
 
 This procedure can be readily generalized to more than two resonators. In fact, the same technique is used to deal with the linear terms of nonlinear circuits such as qubits, simplifying qubit-resonator or qubit-qubit hamiltonians.
 
-#Conclusion
+# Conclusion
 
 We have gone through the mathematical details of treating a resonator in circuit QED. We covered the quantization procedure from ground-up, through which the resonator reveals the dynamics of a quantum harmonic oscillator. Then, we saw how two resonators can be coupled together and how to simplify the Hamiltonian in such cases. 
 

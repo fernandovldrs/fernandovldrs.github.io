@@ -145,7 +145,7 @@ Rewriting the Hamiltonian (after the RWA) in the matrix form:
 
 $$H = \begin{pmatrix} a^{\dagger} && b^{\dagger} \end{pmatrix}\begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} a\\ b \end{pmatrix}$$
 
-Turns out the Hamiltonian is described by a symmetric matrix, that is, equal to its transpose. Symmetric matrices with non-degenerate eigenvalues always have orthogonal eigenvectors with real eigenvalues - this means it can be diagonalized just by frame rotation. So there exists a rotation angle $\Lambda$ such that
+Turns out the Hamiltonian is described by a symmetric matrix, that is, equal to its transpose. Symmetric matrices with non-degenerate eigenvalues always have orthogonal eigenvectors - this means they can be diagonalized just by frame rotation. So there exists a rotation angle $\Lambda$ such that
 
 $$\begin{pmatrix} \cos\Lambda && \sin\Lambda \\ -\sin\Lambda && \cos\Lambda \end{pmatrix} \begin{pmatrix} \omega_A && -g \\ -g && \omega_B \end{pmatrix} \begin{pmatrix} \cos\Lambda && -\sin\Lambda \\ \sin\Lambda && \cos\Lambda \end{pmatrix} = \begin{pmatrix} \tilde{\omega}_A && 0 \\ 0 && \tilde{\omega}_B\end{pmatrix}$$
 

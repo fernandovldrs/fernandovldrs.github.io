@@ -161,4 +161,4 @@ This procedure can be readily generalized to more than two resonators. In fact, 
 
 We have gone through the mathematical details of treating a resonator in circuit QED. We covered the quantization procedure from ground-up, through which the resonator reveals the dynamics of a quantum harmonic oscillator. Then, we saw how two resonators can be coupled together and how to simplify the Hamiltonian in such cases. 
 
-The resonator is too simple of a circuit, and we can't do quantum computation by relying only on them. So, in the future, I will write about how we can model transmons in cQED and how we can use them to make qubits. The knowledge we developed in this post will be essential, so try to develop the equations yourself. 加油!
+The resonator is too simple of a circuit, and we can't do quantum computation by relying only on them. So, in the future, I will write about how we can model transmons in cQED and how we can use them to make qubits. The knowledge from this post will be essential, so try to develop the equations yourself. 加油!

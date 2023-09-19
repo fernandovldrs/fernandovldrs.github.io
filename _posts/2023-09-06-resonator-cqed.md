@@ -81,6 +81,8 @@ When two superconducting resonators are put geometrically close, their fields ov
 
 ## Capacitive coupling
 
+{% include image.liquid url="/assets/resonator-qed_coupled.png" %}
+
 The circuit in the figure above shows two LC circuits A and B whose nodes are connected by a gate capacitance $C_g$. Let us define $V_A$, $V_B$ and $V_g$ as the voltages over each element, with orientations such that Kirchhoff voltage law reads as
 
 $$V_1 + V_2 + V_3 = 0.$$

@@ -15,6 +15,8 @@ As a guideline, in this post I will comment on a few confusion points that I som
 * TOC
 {:toc}
 
+{% include image.liquid url="/assets/disentangling-TL_circuit.pdf" %}
+
 # The classical resonator
 
 In classical electrical circuits, the resonator is nothing more than an LC circuit. That is, it can be modeled as a capacitor shunted by an inductor. If one node of the circuit is grounded, the second node has a voltage $V$. Then the inductor follows the dynamical equations

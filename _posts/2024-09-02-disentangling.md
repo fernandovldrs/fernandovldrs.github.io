@@ -67,7 +67,7 @@ While $Z_0$ is an impedance like any other, it actually quantifies the relation 
 
 $$Z_0(x) = \frac{\|\vec{E}(x)\|}{\|\vec{H}(x)\|}$$
 
-For a homogeneous line, $Z_0$ is independent of the position $x$. We can show that $|\vec{E}|\propto V^+$ and $|\vec{H}|\propto I^+$, where $V^+$ and $I^+$ are the voltage drop and a current waves travelling in the same direction as the electromagnetic wave (denoted as $+$). We can then show that:
+For a homogeneous line, $Z_0$ is independent of the position $x$. We can show that $\|\vec{E}\|\propto V^+$ and $\|\vec{H}\|\propto I^+$, where $V^+$ and $I^+$ are the voltage drop and a current waves travelling in the same direction as the electromagnetic wave (denoted as $+$). We can then show that:
 
 $$Z_0 = \frac{V^+(x)}{I^+(x)}$$
 

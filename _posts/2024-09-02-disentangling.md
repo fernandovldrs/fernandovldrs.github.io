@@ -83,7 +83,7 @@ $$
 
 With a bit more of derivation and assuming harmonic oscillations, we can derive the previously shown equation for $Z_{in}$.
 
-So what is $Z_0$? A *wave impedance*. Its “reality” is not associated losses through Ohms law, as with regular resistors. Instead, it quantifies how a wave propagates through space. But some food for thought: if the energy carried by a wave with impedance $Z_0$ is never reflected back and leaves the circuit (imagine an infinite transmission line), then this propagation can in fact be interpreted as a loss to a resistor $Z_0$. This is equivalent to assuming $Z_L = Z_0$, leading to $Z_{in} = Z_0$.
+So what is $Z_0$? A *wave impedance*. Its “reality” is not associated to losses through Ohms law, as with regular resistors. Instead, it quantifies how a wave propagates through space. But some food for thought: if the energy carried by a wave with impedance $Z_0$ is never reflected back and leaves the circuit (imagine an infinite transmission line), then this propagation can in fact be interpreted as a loss to a resistor $Z_0$. This is equivalent to assuming $Z_L = Z_0$, leading to $Z_{in} = Z_0$.
 
 # Conclusion
 I hope to have help you build some intuition on how transmission lines behave and how they build up on DC circuits. Although my explanations are not comprehensive in any way, they should provide an initial understanding for those who want to venture further into the matter. But most importantly: always remember the difference between the load impedance $Z_L$, the characteristic impedance $Z_0$ and the input impedance $Z_{in}$.

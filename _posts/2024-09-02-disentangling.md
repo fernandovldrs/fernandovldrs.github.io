@@ -15,10 +15,11 @@ As a guideline, in this post I will comment on a few confusion points that I som
 * TOC
 {:toc}
 
-{% include image.liquid url="/assets/disentangling-TL_circuit.pdf" %}
 
 # Transmission lines are not just DC wires
 What is the difference between the two images below?
+
+{% include image.liquid url="/assets/disentangling_TL_circuit.png" %}
 
 The image on the left is a common DC circuit. The voltage along each wire is constant by definition, following the electrostatics assumption that every point of a conductor shares the same potential.  
 
@@ -31,6 +32,7 @@ Following this argument, it is easy to see that the transmission line behaves as
 # TLs don’t need a closed loop to carry signals
 
 This is another confusion that arises from comparing RF circuits with their DC counterparts. Let’s check the circuit again, but now assuming that the circuit is open.
+{% include image.liquid url="/assets/disentangling_TL_circuit_open.png" %}
 
 We know the open DC wires simply don’t carry any current. The voltage drop at the terminals is equal to the voltage provided by the source. 
 
@@ -59,23 +61,19 @@ We just learned that transmission lines have an extra parameter called its chara
 
 A common misunderstanding is thinking that $Z_0$ represents a circuit element, and that the line should be somehow lossy when $\textnormal{Re}(Z_0) \neq 0$. But that is not true. An open circuit is lossless for any $Z_0$ (check that $Z_L \to \infty$  means $Z_{in}$ is always imaginary). So what is the actual meaning of $Z_0$?
 
+{% include image.liquid url="/assets/disentangling_TL_wave.png" %}
+
 While $Z_0$ is an impedance like any other, it actually quantifies the relation between the electric and magnetic fields $\vec{E}$ and $\vec{H}$ travelling down between the two wires of the TL:
 
-$$
-Z_0(x) = \frac{|\vec{E}(x)|}{|\vec{H}(x)|}
-$$
+$$Z_0(x) = \frac{\|\vec{E}(x)\|}{\|\vec{H}(x)\|}$$
 
 For a homogeneous line, $Z_0$ is independent of the position $x$. We can show that $|\vec{E}|\propto V^+$ and $|\vec{H}|\propto I^+$, where $V^+$ and $I^+$ are the voltage drop and a current waves travelling in the same direction as the electromagnetic wave (denoted as $+$). We can then show that:
 
-$$
-Z_0 = \frac{V^+(x)}{I^+(x)}
-$$
+$$Z_0 = \frac{V^+(x)}{I^+(x)}$$
 
 The impedance is the same if the wave is travelling in the opposite direction (labelled as $-$), so:
 
-$$
-Z_0 = -\frac{V^-(x)}{I^-(x)}
-$$
+$$Z_0 = -\frac{V^-(x)}{I^-(x)}$$
 
 The minus signal accounts for the current flipping directions. At any point $x$, the voltage is given by the sum $V^+(x) + V^-(x)$, while the current is given by  $I^+(x) - I^-(x)$. The input impedance at that point is therefore
 

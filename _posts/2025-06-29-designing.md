@@ -18,7 +18,7 @@ If you leave this post wishing to know more, I recommend checking the classic re
 # Finite-element simulation of transmission lines
 Before start drawing a transmission line, think what it should look like. Is it a coaxial line, a coplanar waveguide, or something new altogether? Any pair of conductors interacting through extended lengths can transmit signals, so let your imagination run wild. But also keep this in mind when analyzing complex circuits, because any two unassuming conductors can become a critical leakage channel for your signals. 
 
-{% include image.liquid url="/assets/designing_TL_architectures.pdf" %}
+{% include image.liquid url="/assets/designing_TL_arch.png" %}
 
 For simplicity, this post will focus on a coaxial architecture where the center conductor is printed on a sapphire chip, a common setup in 3D superconducting circuits. The figure below shows the Ansys HFSS design from which we will extract the parameters $\left(Z_0, \varepsilon_r\right)$. One end of the center conductor is touching one wall of the waveguide, and the other end is left open (load $Z_L \to \infty$). 
 

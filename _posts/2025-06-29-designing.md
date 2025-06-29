@@ -52,5 +52,9 @@ The simulation and fitting step must be repeated for every line section to calib
 
 This design was fabricated using superconducting aluminum for the filter and the waveguide, as can be seen in Figure X, and the $S_{21}$ was measured at cryogenic temperatures using a Vector-Network Analyzer. As can be seen in the plot, the experimental curve is very similar to the HFSS simulation, validating our recipe!
 
-
 {% include image.liquid url="/assets/designing_experiment.png" %}
+
+# Conclusion
+The simulations and results shown here are quite simple, but a powerful example for designing any filter design. The same method can be adapted for stepped-impedance or coupled-resonator filters, high- or band-pass, CPW or microstripline architectures. Whatever your target filter is, I hope this post will be a good starting point. 加油!
+
+

@@ -35,3 +35,6 @@ Here $c$ is the speed of light and $j$ is the imaginary unit. Knowing $L$ from t
 The simulation data is extracted as a .txt and fitted to $Z_{in}(f)$, as seen in the figure below, giving $Z_0 = 117\,\Omega$ and $\varepsilon_r = 3.34$. So there you go, a characterized transmission line! I shared the simulation file, results and code in a [github repo](https://github.com/fernandovldrs/hfss_impedance_fit). One tip is to not include poles in the fitted data, since these regions are most prone to numerical error.
 
 {% include image.liquid url="/assets/designing_Zin_fit.png" %}
+
+
+{% include image.liquid url="/assets/designing_filter.png" %}

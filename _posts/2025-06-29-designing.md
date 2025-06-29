@@ -36,5 +36,17 @@ The simulation data is extracted as a .txt and fitted to $Z_{in}(f)$, as seen in
 
 {% include image.liquid url="/assets/designing_Zin_fit.png" %}
 
+# Assembling transmission lines into filters
+
+As an example, I will design the simplest filter in the textbook - a lowpass Butterworth filter of 3rd order. This filter can be translated into transmission lines as shown in the figure below (again, see Pozar for more details).
+
+These values assume the filter is normalized to $Z_0 = 50\,\Omega$, meaning the lines connected to each port should have this characteristic impedance. The length of every line section is $\lambda/8$, where $\lambda$ is the wavelength of the cutoff frequency $f_c$. So, the physical length of the $k$-th section must be $L_k = \lambda_k/8 = c/8f_c\sqrt{\epsilon_{r,k}}$, and the line width should be adjusted to match the desired $Z_{0,k}$.
+
+The simulation and fitting step must be repeated for every line section to calibrate the target $L_k$ and $Z_{0,k}$. This step can be quite tedious, but some architectures have helpful analytical formulas. Once each part is individually calibrated, they can be assembled as a filter, as in the next figure. Now you can define two ports, one for each end of the filter, and measure the transmission $S_{21}$. It should behave as a low-pass with cutoff at $f_C$. In my simulation I made a few practical adjustments: the lines are curved for compactness, and the ports are given by Pogo pins touching the on-chip lines. 
+
 
 {% include image.liquid url="/assets/designing_filter.png" %}
+
+
+This design was fabricated using superconducting aluminum for the filter and the waveguide, as can be seen in Figure X, and the $S_{21}$ was measured at cryogenic temperatures using a Vector-Network Analyzer. As can be seen in the plot, the experimental curve is very similar to the HFSS simulation, validating our recipe!
+

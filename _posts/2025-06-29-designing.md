@@ -32,5 +32,6 @@ $$
 
 Here $c$ is the speed of light and $j$ is the imaginary unit. Knowing $L$ from the design, it is possible to extract both parameters from a single fit - $Z_0$ defines the magnitude of $Z_{in}$, whereas $\varepsilon_r$ defines the frequencies of poles and zeros.
 
-The simulation data is extracted as a \textit{.txt} and fitted to $Z_{in}(f)$, as seen in the figure below, giving $Z_0 = 117\,\Omega$ and $\varepsilon_r = 3.34$. So there you go, a characterized transmission line! I shared the simulation file, results and code in a github repo. One tip is to not include poles in the fitted data, since these regions are most prone to numerical error.
+The simulation data is extracted as a .txt and fitted to $Z_{in}(f)$, as seen in the figure below, giving $Z_0 = 117\,\Omega$ and $\varepsilon_r = 3.34$. So there you go, a characterized transmission line! I shared the simulation file, results and code in a [github repo](https://github.com/fernandovldrs/hfss_impedance_fit). One tip is to not include poles in the fitted data, since these regions are most prone to numerical error.
 
+{% include image.liquid url="/assets/designing_Zin_fit.png" %}

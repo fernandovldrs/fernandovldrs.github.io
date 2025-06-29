@@ -55,6 +55,6 @@ This design was fabricated using superconducting aluminum for the filter and the
 {% include image.liquid url="/assets/designing_experiment.png" %}
 
 # Conclusion
-The simulations and results shown here are quite simple, but a powerful example for designing any filter design. The same method can be adapted for stepped-impedance or coupled-resonator filters, high- or band-pass, CPW or microstripline architectures. Whatever your target filter is, I hope this post will be a good starting point. 加油!
+The simulations and results shown here are quite simple, but a powerful example for designing any type of filter. The same method can be adapted for stepped-impedance or coupled-resonator filters, high- or band-pass, CPW or microstripline architectures. Whatever your target filter is, I hope this post will be a good starting point. 加油!
 
 

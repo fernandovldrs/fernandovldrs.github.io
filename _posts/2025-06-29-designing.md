@@ -23,8 +23,9 @@ For simplicity, this post will focus on a coaxial architecture where the center 
 We start a Terminal Network analysis and select the wall touching the inner conductor as a Terminal Wave port, using the waveguide as a reference conductor (in other words, the ground). We then simulate the one-port impedance $Z_{11}(f) = Z_{in}(f)$ as a function of frequency, which can be modeled as
 
 $$
-    Z_{in}(f) = Z_0\frac{Z_L + jZ_0\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)}{Z_0 + jZ_L\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)} \, \xrightarrow{Z_L\to \infty}  -\frac{jZ_0}{\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)}.
+Z_{in}(f) = Z_0\frac{Z_L + jZ_0\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)}{Z_0 + jZ_L\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)} \, \xrightarrow{Z_L\to \infty}  -\frac{jZ_0}{\tan\left(\frac{2\pi}{c}\sqrt{\varepsilon_r}fL\right)}.
 $$
+
 Here $c$ is the speed of light and $j$ is the imaginary unit. Knowing $L$ from the design, it is possible to extract both parameters from a single fit - $Z_0$ defines the magnitude of $Z_{in}$, whereas $\varepsilon_r$ defines the frequencies of poles and zeros.
 
 The simulation data is extracted as a \textit{.txt} and fitted to $Z_{in}(f)$, as seen in the figure below, giving $Z_0 = 117\,\Omega$ and $\varepsilon_r = 3.34$. So there you go, a characterized transmission line! I shared the simulation file, results and code in a github repo. One tip is to not include poles in the fitted data, since these regions are most prone to numerical error.

@@ -18,6 +18,8 @@ If you leave this post wishing to know more, I recommend checking the classic re
 # Finite-element simulation of transmission lines
 Before start drawing a transmission line, think what it should look like. Is it a coaxial line, a coplanar waveguide, or something new altogether? Any pair of conductors interacting through extended lengths can transmit signals, so let your imagination run wild. But also keep this in mind when analyzing complex circuits, because any two unassuming conductors can become a critical leakage channel for your signals. 
 
+{% include image.liquid url="/assets/designing_TL_architectures.pdf" %}
+
 For simplicity, this post will focus on a coaxial architecture where the center conductor is printed on a sapphire chip, a common setup in 3D superconducting circuits. The figure below shows the Ansys HFSS design from which we will extract the parameters $\left(Z_0, \varepsilon_r\right)$. One end of the center conductor is touching one wall of the waveguide, and the other end is left open (load $Z_L \to \infty$). 
 
 We start a Terminal Network analysis and select the wall touching the inner conductor as a Terminal Wave port, using the waveguide as a reference conductor (in other words, the ground). We then simulate the one-port impedance $Z_{11}(f) = Z_{in}(f)$ as a function of frequency, which can be modeled as
@@ -30,4 +32,3 @@ Here $c$ is the speed of light and $j$ is the imaginary unit. Knowing $L$ from t
 
 The simulation data is extracted as a \textit{.txt} and fitted to $Z_{in}(f)$, as seen in the figure below, giving $Z_0 = 117\,\Omega$ and $\varepsilon_r = 3.34$. So there you go, a characterized transmission line! I shared the simulation file, results and code in a github repo. One tip is to not include poles in the fitted data, since these regions are most prone to numerical error.
 
-{% include image.liquid url="/assets/disentangling_TL_circuit.png" %}
